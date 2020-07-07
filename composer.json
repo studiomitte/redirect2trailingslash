@@ -1,0 +1,38 @@
+{
+  "name": "studiomitte/redirect2trailingslash",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "redirect",
+    "trailing slash"
+  ],
+  "authors": [
+    {
+      "name": "Georg Ringer",
+      "role": "Developer",
+      "homepage": "https://studiomitte.com"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Redirect urls with no trailing slashes to the one with",
+  "homepage": "https://studiomitte.com",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^9.5 || ^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "StudioMitte\\Redirect2trailingslash\\": "Classes"
+    }
+  },
+  "replace": {
+    "typo3-ter/redirect2trailingslash": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "redirect2trailingslash"
+    }
+  }
+}

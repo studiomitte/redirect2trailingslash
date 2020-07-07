@@ -1,0 +1,2 @@
+# cat=basic/other/b; type=int+; label=Status Code for redirect. Either 307 or 301
+statusCode = 307

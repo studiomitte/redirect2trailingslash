@@ -1,6 +1,6 @@
 # TYPO3 Extension `redirect2trailingslash`
 
-This extension redirects urls without a trailing slash to the one with a `/` at the end. This avoids duplicate content issues.a
+This extension redirects urls without a trailing slash to the one with a `/` at the end. This avoids duplicate content issues.
 
 ## Requirements
 

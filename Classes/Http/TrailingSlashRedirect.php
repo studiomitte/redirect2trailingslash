@@ -12,7 +12,6 @@ use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Http\RedirectResponse;
 use TYPO3\CMS\Core\Site\Entity\NullSite;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\StringUtility;
 
 class TrailingSlashRedirect implements MiddlewareInterface, LoggerAwareInterface
 {
@@ -29,7 +28,7 @@ class TrailingSlashRedirect implements MiddlewareInterface, LoggerAwareInterface
         if ($site && !$site instanceof NullSite) {
             $path = $request->getUri()->getPath();
             $pathInfo = pathinfo($path);
-            if (!isset($pathInfo['extension']) && $path !== '/' && !StringUtility::endsWith($path, '/')) {
+            if (!isset($pathInfo['extension']) && $path !== '/' && !\str_ends_with($path, '/')) {
                 $path .= '/';
                 $redirectUri = $request->getUri()->withPath($path);
                 return new RedirectResponse(

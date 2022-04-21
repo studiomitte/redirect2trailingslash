@@ -4,7 +4,7 @@ This extension redirects urls without a trailing slash to the one with a `/` at 
 
 ## Requirements
 
-* TYPO3 9 LTS or 10 LTS
+* TYPO3 10 LTS or 11 LTS
 
 ## Installation and Setup
 Install this extension, either by downloading from the TER or by using composer with `composer require studiomitte/redirect2trailingslash`.

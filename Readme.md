@@ -14,7 +14,8 @@ Install this extension, either by downloading from the TER or by using composer 
 You can configure the status code used for the redirect. By default it is set to *307*.
 
 
----
+## Credits
 
+This extension was created by Georg Ringer for [Studio Mitte, Linz](https://studiomitte.com) with ♥.
 
-_Made by [StudioMitte](https://studiomitte.com) with ♥_
+[Find more TYPO3 extensions we have developed](https://www.studiomitte.com/loesungen/typo3) that provide additional features for TYPO3 sites. 

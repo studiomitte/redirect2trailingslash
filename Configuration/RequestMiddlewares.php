@@ -1,7 +1,5 @@
 <?php
 
-$rearrangedMiddlewares = true;
-
 return [
     'frontend' => [
         'typo3/redirect2trailingslash/redirect' => [

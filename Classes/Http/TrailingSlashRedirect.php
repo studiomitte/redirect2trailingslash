@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace StudioMitte\Redirect2trailingslash\Http;
 
@@ -17,11 +18,6 @@ class TrailingSlashRedirect implements MiddlewareInterface, LoggerAwareInterface
 {
     use LoggerAwareTrait;
 
-    /**
-     * @param ServerRequestInterface $request
-     * @param RequestHandlerInterface $handler
-     * @return ResponseInterface
-     */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $site = $request->getAttribute('site', null);
@@ -35,7 +31,7 @@ class TrailingSlashRedirect implements MiddlewareInterface, LoggerAwareInterface
                     $redirectUri,
                     $this->getStatusCode(),
                     [
-                        'X-Redirect-By' => 'TYPO3 Redirect2TrailingSlash Redirect'
+                        'X-Redirect-By' => 'TYPO3 Redirect2TrailingSlash Redirect',
                     ]
                 );
             }

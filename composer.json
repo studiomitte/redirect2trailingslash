@@ -20,15 +20,12 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^10.4 || ^11.5"
+    "typo3/cms-core": "^11.5 || ^12.4"
   },
   "autoload": {
     "psr-4": {
       "StudioMitte\\Redirect2trailingslash\\": "Classes"
     }
-  },
-  "replace": {
-    "typo3-ter/redirect2trailingslash": "self.version"
   },
   "extra": {
     "typo3/cms": {
